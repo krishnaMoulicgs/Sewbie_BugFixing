@@ -1,0 +1,396 @@
+﻿@{
+	ViewBag.Title = "ProductEntry";
+}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Sewbie Seller Home</title>
+	<script type="text/javascript" src="https://localhost/Scripts/jquery-1.4.min.js" ></script>
+	<script type="text/javascript" src="~/Scripts/ProductCategory.js"> </script>
+    <script type="text/javascript" src="~/Scripts/jsrender.js"></script>
+    <script type="text/javascript" src="~/Scripts/vendorAdmin.js" ></script>
+    <script type="text/javascript" src="~/Scripts/jquery.superfishmenu.js" ></script>
+	<script type="text/javascript">
+	    $(document).ready(function () { $('ctrlMenu').superfish({ autoArrows: false, speed: 'fast', delay: 200 }); }); //]]>
+    </script>
+    
+</head>
+<body>
+	<form name="aspnetForm" method="post" action="Product/Edit" id="aspnetForm">
+	<div class="master-wrapper-page">
+		<div class="master-wrapper-content">
+			<div class="header">
+				<a href="https://localhost/" class="logo">&nbsp;</a>
+				<div class="languageselector">
+					
+				</div>
+				<div class="links">
+					<a href="https://localhost/vendoradministration/">Seller Home</a>
+				</div>
+				<div class="login-info">
+							Logged in as:
+							hav_1323343676_biz@sewbie.com, <a href="/VendorAdministration/logout.aspx">
+								Logout?</a>
+				</div>
+				<div class="version">
+					<span id="ctl00_lblHeader"></span>
+				</div>
+			</div>
+			<div class="clear">
+			</div>
+			<div class="header-menu">
+				<ul id="ctl00_ctrlMenu" class="sf-menu"><li><a href="/vendoradministration/" title="View the dashboard"><img src="https://localhost/vendoradministration/common/ico-dashboard.png" alt="Dashboard" /> Dashboard</a></li><li><a href="/vendoradministration/SellerDetails.aspx" title="admin.sitemap.sellerinformationdescription"><img src="https://localhost/vendoradministration/common/ico-customers.png" alt="My Info" /> My Info</a></li><li><a href="/vendoradministration/products.aspx" title="Manage Products"><img src="https://localhost/vendoradministration/common/ico-catalog.png" alt="My Listings" /> My Listings</a></li><li><a href="/vendoradministration/orders.aspx" title="Manage Customer Orders"><img src="https://localhost/vendoradministration/common/ico-sales.png" alt="Orders" /> Orders</a></li><li><a href="/vendoradministration/helphome.aspx" title="Help Home"><img src="https://localhost/vendoradministration/common/ico-help.png" alt="Help" /> Help</a></li>
+                </ul>
+			</div>
+			<div class="clear">
+			</div>
+			<div class="content">
+				
+			<div class="cph">
+            </div>
+            <div class="section-header">
+	            <div class="title">
+		            <img src="Common/ico-catalog.png" alt="Edit product details" />
+		            Edit product details
+		            -
+		            <span id="ctl00_cph1_ctrlProductDetails_lblTitle">New Hello Again Vintage Product </span>
+		            <a href="Products.aspx" title="back to product list">
+			            (back to product list)</a>
+	            </div>
+	            <div class="options">
+		            <input type="submit" name="PreviewButton" value="Preview" onclick="javascript:OpenWindow(&#39;https://localhost/products/156-new-hello-again-vintage-product.aspx&#39;, 800, 600, true); return false;WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cph1$ctrlProductDetails$PreviewButton&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="PreviewButton" title="Click to preview the product page" class="adminButtonBlue" />
+		            <input type="submit" name="SaveAndStayButton" value="Save" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cph1$ctrlProductDetails$SaveAndStayButton&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="SaveAndStayButton" class="adminButtonBlue" />
+		            <input type="submit" name="DeleteButton" value="Delete" id="DeleteButton" title="Delete product" class="adminButtonBlue" />
+	            </div>
+            </div>
+<table width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+		<td class="section-header">
+			<a id="lnkGeneral" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cph1$ctrlProductDetails$lnkGeneral&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">General Information</a>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			
+		<table class="adminContent">
+			<tr>
+				<td class="adminTitle">
+					<span style="color:Red;">*</span>
+                    <span class="nop-tooltip">
+	                    <img id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_lblProductName_imgToolTip" title="The name of the product." src="Common/ico-help.gif" alt="?" style="border-width:0px;" />
+	                    <span id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_lblProductName_lblValue" title="The name of the product.">Product name:</span>
+                    </span>
+				</td>
+				<td class="adminData">
+				    <input name="ctl00$cph1$ctrlProductDetails$ctrlProductInfoEdit$txtName$txtValue" type="text" value="New Hello Again Vintage Product " id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_txtName_txtValue" class="adminInput" />
+                    <span id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_txtName_rfvValue" style="color:Red;font-family:verdana;font-size:9pt;display:none;"></span>
+                    <input type="hidden" name="ctl00$cph1$ctrlProductDetails$ctrlProductInfoEdit$txtName$rfvValueE_ClientState" id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_txtName_rfvValueE_ClientState" />
+				</td>
+			</tr>
+			<tr>
+				<td class="adminTitle">
+					<span style="color:Red;">*</span>
+					
+<span class="nop-tooltip">
+	<img id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_lblShortDescription_imgToolTip" title="A short description of the product. This is the text that displays in product lists i.e. category / seller pages" src="Common/ico-help.gif" alt="?" style="border-width:0px;" />
+	<span id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_lblShortDescription_lblValue" title="A short description of the product. This is the text that displays in product lists i.e. category / seller pages">Short description:</span>
+</span>
+				</td>
+				<td class="adminData">
+					<textarea name="ctl00$cph1$ctrlProductDetails$ctrlProductInfoEdit$txtShortDescription" rows="2" cols="20" id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_txtShortDescription" class="adminInput" style="height:100px;">
+</textarea>
+						<span id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_rfvValue" style="color:Red;font-family:verdana;font-size:9pt;display:none;"></span>
+						<input type="hidden" name="ctl00$cph1$ctrlProductDetails$ctrlProductInfoEdit$rfvValueE_ClientState" id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_rfvValueE_ClientState" />
+				</td>
+			</tr>
+			<tr>
+				<td class="adminTitle">
+					<span style="color:Red;">*</span>
+					
+<span class="nop-tooltip">
+	<img id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_lblFullDescription_imgToolTip" title="A full description of the product." src="Common/ico-help.gif" alt="?" style="border-width:0px;" />
+	<span id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_lblFullDescription_lblValue" title="A full description of the product.">Full description:</span>
+</span>
+				</td>
+				<td class="adminData">
+					<div><input type="hidden" id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_txtFullDescription" name="ctl00$cph1$ctrlProductDetails$ctrlProductInfoEdit$txtFullDescription" value="" /><input type="hidden" id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_txtFullDescription___Config" value="AutoDetectLanguage=false&amp;HtmlEncodeOutput=true" /><iframe id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_txtFullDescription___Frame" src="/editors/fckeditor/editor/fckeditor.html?InstanceName=ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_txtFullDescription&amp;Toolbar=Default" width="800px" height="350px" frameborder="no" scrolling="no"></iframe></div>
+					<span id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_FullDescCustomValidator" style="color:Red;font-family:verdana;font-size:9pt;display:none;"></span>
+					<input type="hidden" name="ctl00$cph1$ctrlProductDetails$ctrlProductInfoEdit$ValidatorCalloutExtender1_ClientState" id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_ValidatorCalloutExtender1_ClientState" />
+				</td>
+			</tr>
+		</table>
+		
+<table class="adminContent">
+	<tr id="pnlStockQuantity">
+		<td class="adminTitle">
+			
+<span class="nop-tooltip">
+	<img id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_lblStockQuantity_imgToolTip" title="The current stock quantity of this product." src="Common/ico-help.gif" alt="?" style="border-width:0px;" />
+	<span id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_lblStockQuantity_lblValue" title="The current stock quantity of this product.">Stock quantity:</span>
+</span>
+		</td>
+		<td class="adminData">
+			<input name="ctl00$cph1$ctrlProductDetails$ctrlProductInfoEdit$txtStockQuantity$txtValue" type="text" value="1" id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_txtStockQuantity_txtValue" class="adminInput" />
+<span id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_txtStockQuantity_rfvValue" style="color:Red;font-family:verdana;font-size:9pt;display:none;"></span>
+<span id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_txtStockQuantity_rvValue" style="color:Red;display:none;"></span>
+<input type="hidden" name="ctl00$cph1$ctrlProductDetails$ctrlProductInfoEdit$txtStockQuantity$rfvValueE_ClientState" id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_txtStockQuantity_rfvValueE_ClientState" />
+<input type="hidden" name="ctl00$cph1$ctrlProductDetails$ctrlProductInfoEdit$txtStockQuantity$rvValueE_ClientState" id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_txtStockQuantity_rvValueE_ClientState" />
+
+		</td>
+	</tr>
+	<tr id="pnlDisplayStockQuantity">
+		<td class="adminTitle">
+			
+<span class="nop-tooltip">
+	<img id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_lblDisplayStockQuantity_imgToolTip" title="Check to display stock quantity. When enabled, customers will see stock quantity." src="../Administration/Common/ico-help.gif" alt="?" style="border-width:0px;" />
+	<span id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_lblDisplayStockQuantity_lblValue" title="Check to display stock quantity. When enabled, customers will see stock quantity.">Display stock quantity:</span>
+</span>
+		</td>
+		<td class="adminData">
+			<input id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_cbDisplayStockQuantity" type="checkbox" name="ctl00$cph1$ctrlProductDetails$ctrlProductInfoEdit$cbDisplayStockQuantity" checked="checked" />
+		</td>
+	</tr>
+	<tr>
+		<td class="adminTitle">
+			
+<span class="nop-tooltip">
+	<img id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_lblProductPublished_imgToolTip" title="Check to publish this product (visible in store). Uncheck to unpublish (product not available in store)" src="Common/ico-help.gif" alt="?" style="border-width:0px;" />
+	<span id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_lblProductPublished_lblValue" title="Check to publish this product (visible in store). Uncheck to unpublish (product not available in store)">Published:</span>
+</span>
+		</td>
+		<td class="adminData">
+			<input id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_cbPublished" type="checkbox" name="ctl00$cph1$ctrlProductDetails$ctrlProductInfoEdit$cbPublished" />
+		</td>
+	</tr>
+	<tr>
+		<td class="adminTitle">
+			
+<span class="nop-tooltip">
+	<img id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_lblPrice_imgToolTip" title="The price of the product." src="Common/ico-help.gif" alt="?" style="border-width:0px;" />
+	<span id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_lblPrice_lblValue" title="The price of the product.">Price:</span>
+</span>
+		</td>
+		<td class="adminData">
+			<input name="ctl00$cph1$ctrlProductDetails$ctrlProductInfoEdit$txtPrice$txtValue" type="text" value="0.01" id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_txtPrice_txtValue" class="adminInput" />
+
+<span id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_txtPrice_rfvValue" style="color:Red;font-family:verdana;font-size:9pt;display:none;"></span>
+<span id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_txtPrice_rvValue" style="color:Red;display:none;"></span>
+<input type="hidden" name="ctl00$cph1$ctrlProductDetails$ctrlProductInfoEdit$txtPrice$rfvValueE_ClientState" id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_txtPrice_rfvValueE_ClientState" />
+<input type="hidden" name="ctl00$cph1$ctrlProductDetails$ctrlProductInfoEdit$txtPrice$rvValueE_ClientState" id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_txtPrice_rvValueE_ClientState" />
+
+			[USD]
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			
+		</td>
+	</tr>
+	<tr>
+		<td class="adminTitle">
+			
+<span class="nop-tooltip">
+	<img id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_lblProductTags_imgToolTip" title="Product tags are keywords that this product can also be identified by. Enter a comma separated list of the tags to be associated with this products. The more products associated with a particular tag, the larger it will show on the tag cloud." src="Common/ico-help.gif" alt="?" style="border-width:0px;" />
+	<span id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_lblProductTags_lblValue" title="Product tags are keywords that this product can also be identified by. Enter a comma separated list of the tags to be associated with this products. The more products associated with a particular tag, the larger it will show on the tag cloud.">SEO tags:</span>
+</span>
+		</td>
+		<td class="adminData">
+			<input name="ctl00$cph1$ctrlProductDetails$ctrlProductInfoEdit$txtProductTags" type="text" id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_txtProductTags" class="adminInput" />
+		</td>
+	</tr>
+	<tr class="adminSeparator">
+		<td colspan="2">
+			<hr />
+		</td>
+	</tr>
+	<tr id="pnlAdditionalShippingCharge">
+		<td class="adminTitle">
+			
+<span class="nop-tooltip">
+	<img id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_lblAdditionalShippingCharge_imgToolTip" title="The additional shipping charge." src="Common/ico-help.gif" alt="?" style="border-width:0px;" />
+	<span id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_lblAdditionalShippingCharge_lblValue" title="The additional shipping charge.">Shipping charge:</span>
+</span>
+		</td>
+		<td class="adminData">
+			<input name="ctl00$cph1$ctrlProductDetails$ctrlProductInfoEdit$txtAdditionalShippingCharge$txtValue" type="text" value="0" id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_txtAdditionalShippingCharge_txtValue" class="adminInput" />
+
+<span id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_txtAdditionalShippingCharge_rfvValue" style="color:Red;font-family:verdana;font-size:9pt;display:none;"></span>
+<span id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_txtAdditionalShippingCharge_rvValue" style="color:Red;display:none;"></span>
+<input type="hidden" name="ctl00$cph1$ctrlProductDetails$ctrlProductInfoEdit$txtAdditionalShippingCharge$rfvValueE_ClientState" id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_txtAdditionalShippingCharge_rfvValueE_ClientState" />
+<input type="hidden" name="ctl00$cph1$ctrlProductDetails$ctrlProductInfoEdit$txtAdditionalShippingCharge$rvValueE_ClientState" id="ctl00_cph1_ctrlProductDetails_ctrlProductInfoEdit_txtAdditionalShippingCharge_rvValueE_ClientState" />
+
+			[USD]
+		</td>
+	</tr>
+	<tr class="adminSeparator">
+		<td colspan="2">
+			<hr />
+		</td>
+	</tr>
+</table>
+
+		</td>
+	</tr>
+	<tr>
+		<td class="section-header">
+			<span style="color:Red;">*</span>
+			<a id="ctl00_cph1_ctrlProductDetails_lnkCategories" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cph1$ctrlProductDetails$lnkCategories&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Product Categories</a>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			
+	
+	
+	<table>
+		<tr>
+			<td>
+				Mens
+			</td>
+			<td>
+				Womens
+			</td>
+			<td>
+				Kids
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div id="divMensCategory" style="display:inline; width:39%;">
+					<select name="ctl00$cph1$ctrlProductDetails$ctrlProductCategory$ddlMensCategory" id="ctl00_cph1_ctrlProductDetails_ctrlProductCategory_ddlMensCategory" multiple="multiple" size="15">
+	                    <option value="56">Accessories</option>
+	                    <option value="70">Bags</option>
+	                    <option value="71">Sweatshirts</option>
+	                    <option value="72">Outerwear</option>
+	                    <option value="73">Pants</option>
+	                    <option value="74">Shorts</option>
+	                    <option value="75">Jewelry</option>
+	                    <option value="76">T-shirts</option>
+	                    <option value="78">Shoes</option>
+                    </select>
+				</div>
+			</td>
+			<td>
+				<div id="divWomensCategory" style="display:inline; width:39%;">
+					<select name="ctl00$cph1$ctrlProductDetails$ctrlProductCategory$ddlWomensCategory" id="ctl00_cph1_ctrlProductDetails_ctrlProductCategory_ddlWomensCategory" multiple="multiple" size="15">
+	                    <option value="54">Accessories</option>
+	                    <option value="58">Bags</option>
+	                    <option value="59">Dresses</option>
+	                    <option value="60">Outerwear</option>
+	                    <option value="61">Jewelry</option>
+	                    <option value="62">Pants</option>
+	                    <option value="63">Shorts</option>
+	                    <option value="64">Skirts</option>
+	                    <option value="65">Sweaters</option>
+	                    <option value="66">Shoes</option>
+	                    <option value="67">Tops</option>
+	                    <option value="68">T-shirts</option>
+	                    <option value="69">Tank Tops</option>
+                    </select>
+				</div>
+			</td>
+			<td>
+				<div id="divKidsCategory" style="display:inline; width:39%;">
+					<select name="ctl00$cph1$ctrlProductDetails$ctrlProductCategory$ddlKidsCategory" id="ctl00_cph1_ctrlProductDetails_ctrlProductCategory_ddlKidsCategory" multiple="multiple" size="15">
+	                    <option value="79">Bags</option>
+	                    <option value="80">Accessories</option>
+	                    <option value="81">Sweatshirts</option>
+	                    <option value="82">Outerwear</option>
+	                    <option value="83">Pants</option>
+	                    <option value="84">Shorts</option>
+	                    <option value="85">Skirts</option>
+	                    <option value="86">Shoes</option>
+	                    <option value="87">Onesies</option>
+	                    <option value="88">T-shirts</option>
+	                    <option value="89">Tops</option>
+	                    <option value="90">Jewelry</option>
+                    </select>
+				</div>
+			</td>
+			<td>
+				<span id="ctl00_cph1_ctrlProductDetails_ctrlProductCategory_reqCategory" style="color:Red;visibility:hidden;">Please select at least one category.</span>
+			</td>
+		</tr>
+	</table>
+	
+	
+
+
+		</td>
+	</tr>
+	<tr>
+		<td class="section-header">
+			<span style="color:Red;">*</span>
+			<a id="ctl00_cph1_ctrlProductDetails_lnkPictures" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cph1$ctrlProductDetails$lnkPictures&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Pictures</a>
+		</td>
+	</tr>
+    </table>
+    </form>
+    <form action="http://s3.amazonaws.com/sewbie/" method="post" enctype="multipart/form-data">
+    <input type="text" name="key" value="testfile.txt" />
+    <input type="text" name="acl" value="public-read" />
+    <input type="text" name="content-type" value="text/plain" />
+    <input type="hidden" name="AWSAccessKeyId" value="AKIAIVFJAHOSAR73ED2A" />
+    <input type="hidden" name="policy" value="ewogICJleHBpcmF0aW9uIjogIjIwMTMtMDEtMDFUMTI6MDA6MDAuMDAwWiIsCiAgImNvbmRpdGlvbnMiOiBbCiAgICB7ImJ1Y2tldCI6ICJzZXdiaWUiIH0sCiAgICB7ImFjbCI6ICJwdWJsaWMtcmVhZCIgfSwKICAgIFsiZXEiLCAiJGtleSIsICJ0ZXN0ZmlsZS50eHQiXSwKICAgIFsic3RhcnRzLXdpdGgiLCAiJENvbnRlbnQtVHlwZSIsICJ0ZXh0LyJdLAogIF0KfQo=" />
+    <input type="hidden" name="signature" value="sX+242pcW8UwKnlRbYnmKKjgFMU=" />
+    <input name="file" type="file" />
+    <input name="submit" value="Upload" type="submit" />
+    </form>
+    <form action="http://s3.amazonaws.com/sewbie" >
+	    <p>
+		    <strong>Add a new picture</strong>
+	    </p>
+	    <table class="adminContent">
+		    <tr>
+			    <td class="adminTitle">
+			    </td>
+			    <td class="adminData">
+				    <input type="file" name="ctl00$cph1$ctrlProductDetails$ctrlProductPictures$fuProductPicture1" id="ctl00_cph1_ctrlProductDetails_ctrlProductPictures_fuProductPicture1" title="Choose a file to upload" class="adminInput" />
+			    </td>
+		    </tr>
+		    <tr>
+			    <td class="adminTitle">
+			    </td>
+			    <td class="adminData">
+				    <input name="ctl00$cph1$ctrlProductDetails$ctrlProductPictures$txtProductPictureDisplayOrder1$txtValue" type="text" value="1" id="ctl00_cph1_ctrlProductDetails_ctrlProductPictures_txtProductPictureDisplayOrder1_txtValue" class="adminInput" />
+                    <span id="ctl00_cph1_ctrlProductDetails_ctrlProductPictures_txtProductPictureDisplayOrder1_rfvValue" style="color:Red;font-family:verdana;font-size:9pt;display:none;"></span>
+                    <span id="ctl00_cph1_ctrlProductDetails_ctrlProductPictures_txtProductPictureDisplayOrder1_rvValue" style="color:Red;display:none;"></span>
+                    <input type="hidden" name="ctl00$cph1$ctrlProductDetails$ctrlProductPictures$txtProductPictureDisplayOrder1$rfvValueE_ClientState" id="ctl00_cph1_ctrlProductDetails_ctrlProductPictures_txtProductPictureDisplayOrder1_rfvValueE_ClientState" />
+                    <input type="hidden" name="ctl00$cph1$ctrlProductDetails$ctrlProductPictures$txtProductPictureDisplayOrder1$rvValueE_ClientState" id="ctl00_cph1_ctrlProductDetails_ctrlProductPictures_txtProductPictureDisplayOrder1_rvValueE_ClientState" />
+			    </td>
+		    </tr>
+        </table>
+    </form>
+
+
+<div class="footer">
+	<div class="footerInfo">
+		<div class="leftInfo">
+			<ul>
+			   <li><a href="/contactus.aspx">Contact Us</a></li>
+				<li>|</li>
+				<li><a href="/aboutus.aspx">About Us</a></li>
+				<li>|</li>
+				<li><a href="/shippinginfo.aspx">Shipping &amp; Returns</a></li>
+				<li>|</li>
+				<li><a href="/privacyinfo.aspx">Privacy Notice</a></li>
+				<li>|</li>
+				<li><a href="/conditionsinfo.aspx">Conditions of Use</a></li>
+				<li>|</li>
+				<li><a href="/sitemap.aspx">Sitemap</a></li>
+			</ul>
+		</div>
+	   
+	</div>
+	<div class="footer-disclaimer">
+		Copyright &copy; 2012 Sewbie. All rights reserved.
+	</div>
+	<div>
+		
+	</div>
+</div>
+</form>
+</body>
+</html>
+

@@ -1,0 +1,77 @@
+<%@ Master Language="C#" AutoEventWireup="true" Inherits="NopSolutions.NopCommerce.Web.VendorAdministration.mainMaster"
+    CodeBehind="main.master.cs" %>
+
+<%@ Register TagPrefix="nopCommerce" TagName="AdminLanguageSelector" Src="Modules/AdminLanguageSelector.ascx" %>
+<%@ Register TagPrefix="nopCommerce" TagName="Menu" Src="Modules/MenuControl.ascx" %>
+<%@ Register TagPrefix="nopcommerce" TagName="Footer" Src="Modules/Footer.ascx" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Sewbie Seller Home</title>
+    <asp:PlaceHolder id="SCRIPTS" runat="server" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <ajaxToolkit:ToolkitScriptManager runat="server" ID="sm1" EnableScriptGlobalization="true" EnableScriptLocalization="true"
+        ScriptMode="Release" CompositeScript-ScriptMode="Release" />
+    <div class="master-wrapper-page">
+        <div class="master-wrapper-content">
+            <div class="header">
+                <a href="<%=CommonHelper.GetStoreLocation()%>" class="logo">&nbsp;</a>
+                <div class="languageselector">
+                    <nopCommerce:AdminLanguageSelector runat="server" ID="ctrlAdminLanguageSelector" />
+                </div>
+                <div class="links">
+                    <a href="<%=CommonHelper.GetVendorAdminLocation()%>"><%= GetLocaleResourceString("Account.VendorAdministration")%></a>
+                </div>
+                <div class="login-info">
+                    <asp:LoginView ID="topLoginView" runat="server">
+                        <LoggedInTemplate>
+                            <%= GetLocaleResourceString("VendorAdmin.LoggedInAs")%>
+                            <%=Page.User.Identity.Name %>, <a href="<%=Page.ResolveUrl("~/VendorAdministration/logout.aspx")%>">
+                                <%= GetLocaleResourceString("VendorAdmin.Logout")%></a>
+                        </LoggedInTemplate>
+                    </asp:LoginView>
+                </div>
+                <div class="version">
+                    <asp:Label runat="server" ID="lblHeader" />
+                </div>
+            </div>
+            <div class="clear">
+            </div>
+            <div class="header-menu">
+                <nopCommerce:Menu runat="server" ID="ctrlMenu" SiteMapProviderName="swbVendorAdminXmlSiteMapProvider" />
+            </div>
+            <div class="status-bar">
+                <div class="help">
+                    <%=DateTimeHelper.ConvertToUserTime(DateTime.UtcNow).ToString("f")%>
+                    <asp:HyperLink runat="server" ID="lnkHelp" />
+                </div>
+                <div class="breadcrumb">
+                    <asp:SiteMapPath ID="smp" runat="server" RenderCurrentNodeAsLink="true" PathSeparatorStyle-Font-Bold="true">
+                        <NodeTemplate>
+                            <a href='<%# Eval("url") %>' title='<%# GetLocaleResourceString(Container.SiteMapNode["nopResourceDescription"]) %>'>
+                                <%# GetLocaleResourceString(Container.SiteMapNode["nopResourceTitle"])%></a>
+                        </NodeTemplate>
+                    </asp:SiteMapPath>
+                </div>
+            </div>
+            <div class="clear">
+            </div>
+            <div class="content">
+                <asp:Panel runat="server" ID="pnlMessage" EnableViewState="false" Visible="false">
+                    <asp:Literal runat="server" ID="lMessage" EnableViewState="false"  Text="This is a messge"/>
+                    <asp:Literal runat="server" ID="lMessageComplete" EnableViewState="false" />
+                </asp:Panel>
+                <div class="cph">
+                    <asp:ContentPlaceHolder ID="cph1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nopcommerce:Footer id="ctrlFooter" runat="server"></nopcommerce:Footer>
+    </form>
+</body>
+</html>

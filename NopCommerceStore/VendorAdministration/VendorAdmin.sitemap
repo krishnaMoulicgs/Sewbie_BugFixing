@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap enableLocalization="true" xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode title="Home"  description="Vendor Administration Home" nopResourceTitle="VendorAdmin.Sitemap.HomeTitle" nopResourceDescription="VendorAdmin.Sitemap.HomeDescription">
+    <!-- Home -->
+      <siteMapNode title="Dashboard"  url="~/vendoradministration/" IconUrl="~/vendoradministration/common/ico-dashboard.png" description="View the dashboard" nopResourceTitle="VendorAdmin.Sitemap.DashboardTitle" nopResourceDescription="Admin.Sitemap.DashboardDescription" />
+    <!-- End Home -->
+
+    <!-- Products -->
+    <siteMapNode title="SellerInfo" url="~/vendoradministration/SellerDetails.aspx" IconUrl="~/vendoradministration/common/ico-customers.png" description="Seller Information" nopResourceTitle="VendorAdmin.Sitemap.SellerInformation" nopResourceDescription="Admin.Sitemap.SellerInformationDescription" >
+    </siteMapNode>
+    <!-- End Products -->
+    
+    <!-- Products -->
+    <siteMapNode title="Products" url="~/vendoradministration/products.aspx" IconUrl="~/vendoradministration/common/ico-catalog.png" description="Manage Products" nopResourceTitle="VendorAdmin.Sitemap.ProductsTitle" nopResourceDescription="Admin.Sitemap.ProductsDescription" >
+    </siteMapNode>
+    <!-- End Products -->
+    
+    <!-- Orders -->
+    <siteMapNode title="Orders" url="~/vendoradministration/orders.aspx" IconUrl="~/vendoradministration/common/ico-sales.png" description="Manage Orders" nopResourceTitle="VendorAdmin.Sitemap.OrdersTitle" nopResourceDescription="Admin.Sitemap.OrdersDescription" />
+    <!-- End Orders -->
+	  <siteMapNode title="Charges" url="~/vendoradministration/Charges.aspx" IconUrl="~/vendoradministration/common/ico-sales.png" description="Manage Orders" nopResourceTitle="Charges" nopResourceDescription="Charges" />
+
+	  <siteMapNode title="Invoices" url="~/vendoradministration/Invoices.aspx" IconUrl="~/vendoradministration/common/ico-sales.png" description="Manage Orders" nopResourceTitle="Invoices" nopResourceDescription="Invoices" />
+
+	  <!-- Help -->
+    <siteMapNode title="Help" url="~/vendoradministration/helphome.aspx" IconUrl="~/vendoradministration/common/ico-help.png" description="Help Home" nopResourceTitle="VendorAdmin.Sitemap.HelpHomeTitle" nopResourceDescription="Admin.Sitemap.HelpHomeDescription" >
+    </siteMapNode>
+    <!-- End Help -->
+  </siteMapNode>
+</siteMap>

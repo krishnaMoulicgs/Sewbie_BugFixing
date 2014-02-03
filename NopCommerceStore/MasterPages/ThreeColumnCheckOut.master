@@ -1,0 +1,24 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPages/Root.Master" AutoEventWireup="true"
+    CodeBehind="ThreeColumnCheckOut.master.cs" Inherits="NopSolutions.NopCommerce.Web.MasterPages.ThreeColumnCheckOut" %>
+
+<asp:Content ID="contentHead" ContentPlaceHolderID="cphHead" runat="server">
+    <asp:ContentPlaceHolder ID="cphHead" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content1" ContentPlaceHolderID="cph1" runat="server">
+    <div style="border:solid 1px #d7d7d7;"  >
+        <div class="checkout-data">
+            <div class="master-wrapper-center-3" style="width: 475px;">
+                <asp:ContentPlaceHolder ID="cph1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>   
+            <div class="master-wrapper-center-3" style="width: 475px;">
+                <asp:ContentPlaceHolder ID="chp2" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>   
+        </div>
+        <asp:ContentPlaceHolder ID="cphBottom1" runat="server">
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="cphBottom" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+</asp:Content>

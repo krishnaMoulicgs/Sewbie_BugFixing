@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<MenuRoot>
+  <MenuValue>
+    <ProductCategory>women|../category/53-women.aspx</ProductCategory>
+    <ProductCategory>accessories|../category/54-accessories.aspx?</ProductCategory>
+    <ProductCategory>bags|../category/58-bags.aspx?categoryTransId=1</ProductCategory>
+    <ProductCategory>dresses|../category/59-dresses.aspx?categoryTransId=1</ProductCategory>
+    <ProductCategory>outerwear|../category/60-outerwear.aspx?categoryTransId=1</ProductCategory>
+    <ProductCategory>jewelry|../category/61-jewelry.aspx?categoryTransId=1</ProductCategory>
+    <ProductCategory>pants|../category/62-pants.aspx?categoryTransId=1</ProductCategory>
+    <ProductCategory>shorts|../category/63-shorts.aspx?categoryTransId=1</ProductCategory>
+    <ProductCategory>skirts|../category/64-skirts.aspx?categoryTransId=1</ProductCategory>
+    <ProductCategory>sweaters|../category/65-sweaters.aspx?categoryTransId=1</ProductCategory>
+    <ProductCategory>shoes|../category/66-shoes.aspx?categoryTransId=1</ProductCategory>
+    <ProductCategory>tops|../category/67-tops.aspx?categoryTransId=1</ProductCategory>
+    <ProductCategory>t-shirts|../category/68-TShirts.aspx?categoryTransId=1</ProductCategory>
+    <ProductCategory>tank tops|../category/69-tanktops.aspx?categoryTransId=1</ProductCategory>and tanks
+  </MenuValue>
+  <MenuValue>
+    <ProductCategory>men|../category/55-men.aspx</ProductCategory>
+    <ProductCategory>accessories|../category/56-accessories.aspx?categoryTransId=2</ProductCategory>
+    <ProductCategory>bags|../category/70-bags.aspx?categoryTransId=2</ProductCategory>
+    <ProductCategory>sweatshirts|../category/71-sweatshirts.aspx?categoryTransId=2</ProductCategory>
+    <ProductCategory>outerwear|../category/72-outerwear.aspx?categoryTransId=2</ProductCategory>
+    <ProductCategory>pants|../category/73-pants.aspx?categoryTransId=2</ProductCategory>
+    <ProductCategory>shorts|../category/74-shorts.aspx?categoryTransId=2</ProductCategory>
+    <ProductCategory>jewelry|../category/75-jewelry.aspx?categoryTransId=2</ProductCategory>
+    <ProductCategory>t-shirts|../category/76-tshirts.aspx?categoryTransId=2</ProductCategory>
+    <ProductCategory>shoes|../category/78-shoes.aspx?categoryTransId=2</ProductCategory>
+  </MenuValue>
+  <MenuValue>
+    <ProductCategory>kids|../category/57-kids.aspx</ProductCategory>
+    <ProductCategory>accessories|../category/80-accessories.aspx?categoryTransId=3</ProductCategory>
+    <ProductCategory>bags|../category/79-bags.aspx?categoryTransId=3</ProductCategory>
+    <ProductCategory>outerwear|../category/82-outerwear.aspx?categoryTransId=3</ProductCategory>
+    <ProductCategory>jewelry|../category/90-jewelry.aspx?categoryTransId=3</ProductCategory>
+    <ProductCategory>onesies|../category/87-onesies.aspx?categoryTransId=3</ProductCategory>
+    <ProductCategory>pants|../category/83-pants.aspx?categoryTransId=3</ProductCategory>
+    <ProductCategory>t-shirts|../category/88-tshirts.aspx?categoryTransId=2</ProductCategory>
+    <ProductCategory>tops|../category/89-tops.aspx?categoryTransId=2</ProductCategory>
+    <ProductCategory>shoes|../category/86-shoes.aspx?categoryTransId=3</ProductCategory>
+    <ProductCategory>shorts|../category/84-shorts.aspx?categoryTransId=3</ProductCategory>
+    <ProductCategory>skirts|../category/85-skirts.aspx?categoryTransId=3</ProductCategory>
+    <ProductCategory>tops|../category/89-tops.aspx?categoryTransId=3</ProductCategory>
+  </MenuValue>
+</MenuRoot>

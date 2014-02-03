@@ -1,0 +1,121 @@
+﻿body {
+}
+.CategoryContent
+{
+    width: auto;
+    float: left;
+    margin: -11px;
+}
+.CategoryTextbox
+{
+    width:30px;border:1px solid;height:20px;
+}
+.labelbox
+{
+   padding-left:10px;
+}
+.top-cont
+{
+    width:100%;float:left;margin-bottom:10px;
+}
+.pageContainer
+{
+    width: auto;
+    margin: -6px;
+    float: right;
+    margin-right: 0px;
+}
+.bottom-cont
+{
+  width:100%;float:left;margin-top:10px;   
+}
+.CdivSearchResults
+{
+    width:100%;float:left;
+}
+
+
+
+
+a
+{
+    color: #000066;
+    text-decoration: none;
+}
+
+a:hover
+{
+	color: #a1a1a1;
+	text-decoration: underline;
+}
+.category_pager_a
+{ 
+   /*padding: 2px;
+   padding-right: 5px; 
+   padding-left: 5px; 
+   border: solid 1px #666; 
+   background-color: #fff;
+   margin-left:10px;*/
+   
+   margin-left: 10px;
+   text-decoration:none;
+   color  : #000066;    
+   
+   }
+.category_pager_a_select 
+{
+    margin-left: 10px;
+    font-weight: bold;
+    color: #000;
+}
+
+.divPageSize
+{
+    margin: 0px 0px 0px 13px;
+    vertical-align:top;
+}
+
+.divPageSize ul
+{
+    display:inline-block;
+}
+
+.divPageSize ul li
+{
+    float: left;
+    /*padding-left: 5px;*/
+    color: #050505;
+    cursor: pointer;
+    text-decoration:underline;
+    margin-left: 5px;
+}
+
+.divPageSize a:hover
+{
+    border: 1px solid #2b66a5;
+    color: #000;
+    background-color: #FFFF80;
+}
+
+.divPageSize ul li:active,.divPageSize ul li:active,.divPageSize ul a.current
+{
+    font-weight:bold;
+    background:#FFFFFF;
+}
+
+.divPageSize span
+{
+    display:inline-block;
+    vertical-align:top;
+}
+
+.category_overlay
+{
+	background:url('../images/waiting.gif') #fff fixed no-repeat 50% 50%;
+	filter: alpha(opacity=20);
+	zoom: 1;
+	width:773px;
+	opacity:0.65;
+	display: none;
+	position:absolute;
+}

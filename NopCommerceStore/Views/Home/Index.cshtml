@@ -1,0 +1,162 @@
+﻿@{
+	Layout = "~/Views/Shared/_CategoryPage.cshtml";
+	ViewBag.Title = "Welcome to Sewbie 2.0!";
+}
+<div class="header">
+	<div class="header-logo">
+		<a href="http://localhost/" class="logo">&nbsp; </a>
+	</div>
+	<div class="clearright"></div>
+	<div class="header-links-wrapper">
+		<div class="header-links">
+			<ul>
+						<li>
+							<a href="http://www.sewbie.com/account.aspx" class="account">My Account</a>
+						</li>
+						<li><a href="/logout.aspx" class="ico ico-logout">
+							Log out</a> &nbsp;</li> 
+				<li><a href="http://www.sewbie.com/wishlist.aspx" class="ico ico-wishlist">
+					Wishlist</a> <a href="http://www.sewbie.com/wishlist.aspx">
+						(0)</a></li>
+				@*@if (RoleProvider.IsUserInRole(user.username, "admin"))
+                {*@
+                    <li><a href="/administration/" class="ico ico-admin">Administration</a> </li>
+                //}
+				
+				
+				<li><a href="/vendoradministration/Default.aspx" class="ico ico-admin">
+					Seller Home</a> </li>
+				
+			</ul>
+		</div>
+	</div>
+	<div class="header-selectors-wrapper">
+		<div class="header-taxDisplayTypeSelector">
+			
+		</div>
+		<div class="header-languageselector">
+			
+		</div>
+	</div>
+
+	<div class="MiniShoppingBox">
+		
+
+<link id="ctl00_layoutCss" rel="stylesheet" type="text/css" href="/AddonsByOsShop/Styles/layout.css">
+
+<script type="text/javascript">
+	//Shopping cart display localized
+	function ShowMiniShopping(count, allmoney) {
+		var str = 'YOUR BAG {0} items {1}';
+		str = str.replace("{0}", count);
+		str = str.replace("{1}", allmoney);
+		return str;
+	}
+
+	function getQty() {
+		return 'Qty.';
+	}
+	function tips() {
+		return 'TIPS';
+	}
+
+	function searchtips() {
+		return 'Most relevant matches shown. Click Search for more items';
+	}
+
+</script>
+@*<script type="text/javascript" src="/AddonsByOsShop/CustomScripts/jquery.min.js"></script>*@
+<script type="text/javascript" src="/AddonsByOsShop/CustomScripts/MiniShoppingCartEffect.js"></script>
+<script type="text/javascript" src="/AddonsByOsShop/CustomScripts/MiniShopping.js"></script>
+<script type="text/javascript" src="/AddonsByOsShop/CustomScripts/attributeValue.js"></script>
+
+<script type="text/javascript" "="">
+	//Initialization Cart
+	this.AjaxTemplate.InitializationCart();
+</script>
+
+<div class="site-wrapper">
+	<ul class="actions">
+		<li class="minishoppinginput">
+			<input id="openMiniBasketOnHover" value="true" type="hidden" /> 
+			<input id="miniBasketDisabledOrEnabledMvt" value="true" type="hidden" />  
+		</li>
+	   
+		<li id="miniBasket">
+		<!--This shows the number and total shopping cart price-->
+		<a class="have_items">
+			<span id="MiniShoppingShow">YOUR BAG 0 items </span>
+		</a> 
+	 
+		<div style="display: none" class="mini-bag-wrapper">
+			<div class="mini-header"></div>
+			<div class="mini-bag-wrapper-top">
+				<div class="mini-bag-wrapper-bottom">
+					<div id="mini-bag-body" class="mini-bag-wrapper-right">
+
+					<!--There are no products to display start -->   
+					<div class="empty body" style="display: block; ">
+						<div class="emptycart">
+							<a>Your Shopping Cart is empty!</a>
+						</div> 
+						<div class="emptybottom"></div> 
+					</div>
+					<!--There are no products to display end -->             
+
+					<!-- Show Shopping Cart -->                    
+					<div style="display: none; " class="full body">
+						<!--Show Shopping Cart (products list) start --> 
+						<div class="items">
+							<div style="top: 0px" class="itemsClmn"></div>
+						
+							<div style="clear: both"></div>
+						</div>   
+						<!--Show Shopping Cart (products list)end --> 
+						<div class="MiniShoppingCart_bottom">
+							<div class="MiniShoppingCart_bottom_buttons">
+								<div style="display: block; background-image: url(http://www.sewbie.com/AddonsByOsShop/Styles/images/MiniShoppingCart_prev1.png); " class="prev disabled"></div>
+								<div style="display: block; background-image: url(http://www.sewbie.com/AddonsByOsShop/Styles/images/MiniShoppingCart_next1.png); " class="next disabled"></div>
+							</div>
+			
+							<div class="summary">
+								<div class="total-price">
+									<!--Display the total price of goods-->
+									<div id="totalMoney">NaN</div>
+								</div>
+								<div class="total-label">Total&nbsp;  </div>
+							</div>
+ 
+							<div id="minibagLinks" class="links">
+								<a class="replace go-to-bag" href="/ShoppingCart.aspx"><span>Check Out</span></a> 
+								<a class="replace proceed-to-checkout" style="display:none;" href="/ShoppingCart.aspx"><span>Checkout</span></a> 
+							</div>
+							<div>           
+							</div>          
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</li>
+	</ul>
+			
+</div>
+
+	</div>
+	@* Render Menu 
+	@{ Html.RenderAction("RenderMenu", "Home"); }*@
+</div>
+
+
+<div id="tileContainer">
+	<div class="fat-tile box" id="divMenuHolder"></div>
+	<div class="fat-tall-tile box" id="item-1"><a href="/RecentlyAddedProducts.aspx"><img src="/BannerImages/Homepage/homepagebanner1.jpg" alt=""/></a></div>
+	<div class="fat-tile box" id="item-2"><a href="/RecentlyAddedProducts.aspx"><img src="/BannerImages/Homepage/homepagebanner2.jpg" alt=""/></a></div>
+	<div class="fat-tile box" id="item-3"><a href="/RecentlyAddedProducts.aspx"><img src="/BannerImages/Homepage/homepagebanner3.jpg" alt=""/></a></div>
+	<div class="tall-tile box" id="item-4"><a href="/RecentlyAddedProducts.aspx"><img src="/BannerImages/Homepage/homepagebanner4.jpg" alt=""/></a></div>
+	<div class="tall-tile box" id="item-5"><a href="/RecentlyAddedProducts.aspx"><img src="/BannerImages/Homepage/homepagebanner5.jpg" alt=""/></a></div>
+	<div class="tile box" id="item-6"><a href="/RecentlyAddedProducts.aspx"><img src="/BannerImages/Homepage/homepagebanner6.jpg" alt=""/></a></div>
+	<div class="tile box" id="item-7"><a href="/RecentlyAddedProducts.aspx"><img src="/BannerImages/Homepage/homepagebanner7.jpg" alt=""/></a></div>
+</div>
+

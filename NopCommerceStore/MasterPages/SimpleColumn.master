@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPages/Root.Master" AutoEventWireup="true" CodeBehind="SimpleColumn.master.cs" Inherits="NopSolutions.NopCommerce.Web.MasterPages.SimpleColumn" %>
+
+
+<asp:Content ID="Content3" ContentPlaceHolderID="cphHead" runat="server">
+    <asp:ContentPlaceHolder ID="cphHead" runat="server" ></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content1" ContentPlaceHolderID="cph1" runat="server">
+    <div class="master-wrapper-side">
+       <div class="simple-master-left">
+        <asp:ContentPlaceHolder ID="cph2" runat="server">
+          <ul>
+               <li><a href="<%=Page.ResolveUrl("~/contactus.aspx")%>"><%=GetLocaleResourceString1("ContactUs.ContactUs")%></a></li>
+                
+                <li><a href="<%=Page.ResolveUrl("~/aboutus.aspx")%>"><%=GetLocaleResourceString1("Content.AboutUs")%></a></li>
+              
+                <li><a href="<%=Page.ResolveUrl("~/shippinginfo.aspx")%>"><%=GetLocaleResourceString1("Content.Shipping&Returns")%></a></li>
+
+                <li><a href="<%=Page.ResolveUrl("~/privacyinfo.aspx")%>"><%=GetLocaleResourceString1("Content.PrivacyNotice")%></a></li>
+
+                <li><a href="<%=Page.ResolveUrl("~/conditionsinfo.aspx")%>"><%=GetLocaleResourceString1("Content.ConditionsOfUse")%></a></li>
+              
+                <li><a href="<%=Page.ResolveUrl("~/sitemap.aspx")%>"><%=GetLocaleResourceString1("Content.Sitemap")%></a></li>
+            </ul>
+        </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    <div class="master-wrapper-center">
+        <div class="master-wrapper-cph">
+            <asp:ContentPlaceHolder ID="cph1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+</asp:Content>
+

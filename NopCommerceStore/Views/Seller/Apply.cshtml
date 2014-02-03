@@ -1,0 +1,305 @@
+﻿@{
+    ViewBag.Title = "Apply to Sell on Sewbie";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="header">
+    <div class="header-logo">
+        <a href="http://www.sewbie.com/" class="logo">&nbsp; </a>
+    </div>
+    <div class="clearright">
+    </div>
+    <div class="header-links-wrapper">
+        <div class="header-links">
+            <ul>
+                <li><a href="http://www.sewbie.com/account.aspx" class="account">My Account</a>
+                </li>
+                <li><a href="/logout.aspx" class="ico ico-logout">Log out</a> &nbsp;</li>
+                <li><a href="http://www.sewbie.com/wishlist.aspx" class="ico ico-wishlist">Wishlist</a>
+                    <a href="http://www.sewbie.com/wishlist.aspx">(0)</a></li>
+                <li><a href="/administration/" class="ico ico-admin">Administration</a> </li>
+                <li><a href="/vendorregistration.aspx" class="ico ico-admin">Become a Seller</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="header-selectors-wrapper">
+        <div class="header-taxDisplayTypeSelector">
+        </div>
+        <div class="header-languageselector">
+        </div>
+    </div>
+    <div class="MiniShoppingBox">
+        <link id="ctl00_layoutCss" rel="stylesheet" type="text/css" href="/AddonsByOsShop/Styles/layout.css" />
+        <script type="text/javascript">
+    //Shopping cart display localized
+    function ShowMiniShopping(count, allmoney) {
+        var str = 'YOUR BAG {0} items {1}';
+        str = str.replace("{0}", count);
+        str = str.replace("{1}", allmoney);
+        return str;
+    }
+
+    function getQty() {
+        return 'Qty.';
+    }
+    function tips() {
+        return 'TIPS';
+    }
+
+    function searchtips() {
+        return 'Most relevant matches shown. Click Search for more items';
+    }
+
+
+
+</script>
+        <script type="text/javascript" src="/AddonsByOsShop/CustomScripts/jquery.min.js"></script>
+        <script type="text/javascript" src="/AddonsByOsShop/CustomScripts/MiniShoppingCartEffect.js"></script>
+        <script type="text/javascript" src="/AddonsByOsShop/CustomScripts/MiniShopping.js"></script>
+        <script type="text/javascript" src="/AddonsByOsShop/CustomScripts/attributeValue.js"></script>
+        <script type="text/javascript">
+    //Initialization Cart
+    this.AjaxTemplate.InitializationCart();
+
+</script>
+        <div class="site-wrapper">
+            <ul class="actions">
+                <li class="minishoppinginput">
+                    <input id="openMiniBasketOnHover" value="true" type="hidden" />
+                    <input id="miniBasketDisabledOrEnabledMvt" value="true" type="hidden" />
+                </li>
+                <li id="miniBasket">
+                    <!--This shows the number and total shopping cart price-->
+                    <a class="have_items"><span id="MiniShoppingShow"></span></a>
+                    <div style="display: none" class="mini-bag-wrapper">
+                        <div class="mini-header">
+                        </div>
+                        <div class="mini-bag-wrapper-top">
+                            <div class="mini-bag-wrapper-bottom">
+                                <div id="mini-bag-body" class="mini-bag-wrapper-right">
+                                    <!--There are no products to display start -->
+                                    <div class="empty body">
+                                        <div class="emptycart">
+                                            <a>Your Shopping Cart is empty!</a>
+                                        </div>
+                                        <div class="emptybottom">
+                                        </div>
+                                    </div>
+                                    <!--There are no products to display end -->
+                                    <!-- Show Shopping Cart -->
+                                    <div style="display: block" class="full body">
+                                        <!--Show Shopping Cart (products list) start -->
+                                        <div class="items">
+                                            <div style="top: 0px" class="itemsClmn">
+                                                <!--Shows the number of a three-->
+                                                <!--Buy goods in MiniShopping display dynamic loading-->
+                                            </div>
+                                            <div style="clear: both">
+                                            </div>
+                                        </div>
+                                        <!--Show Shopping Cart (products list)end -->
+                                        <div class="MiniShoppingCart_bottom">
+                                            <div class="MiniShoppingCart_bottom_buttons">
+                                                <div style="display: block;" class="prev disabled">
+                                                </div>
+                                                <div style="display: block;" class="next">
+                                                </div>
+                                            </div>
+                                            <div class="summary">
+                                                <div class="total-price">
+                                                    <!--Display the total price of goods-->
+                                                    <div id="totalMoney">
+                                                    </div>
+                                                </div>
+                                                <div class="total-label">
+                                                    Total&nbsp;
+                                                </div>
+                                            </div>
+                                            <div id="minibagLinks" class="links">
+                                                <a class="replace go-to-bag" href="/ShoppingCart.aspx"><span>Check Out</span></a>
+                                                <a class="replace proceed-to-checkout" style="display: none;" href="/ShoppingCart.aspx">
+                                                    <span>Checkout</span></a>
+                                            </div>
+                                            <div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../Scripts/navsite.js"></script>
+<script type="text/javascript" src="/AddonsByOsShop/CustomScripts/nav.js"></script>
+<div class="menu-block">
+    <div class="rightcorner">
+        <div id="div_center">
+            <ul id="nav">
+                <div class="site-nav">
+                    <div id="floor_nav">
+                        <div class="menu">
+                            <ul class="floors">
+                                <li><a id="ctl00_ctl00_ctrlHeaderMenu_Menu_RecentlyAddedProducts" href="RecentlyAddedProducts.aspx">
+                                    What's new</a> </li>
+                                <li id='floor_1'><a class='replace selected' href='../category/53-women.aspx'>women</a><div
+                                    id='sub_floor_1' class='sub-floor-menus' style='display: none; left: 21px;'>
+                                    <div class='sub-menu-wrapper-left'>
+                                        <div class='sub-menu-wrapper-right'>
+                                            <div class='sub-menu-wrapper-bottom'>
+                                                <div class='sub-menu-wrapper-top'>
+                                                    <div class='sub-menu-wrapper'>
+                                                        <dl class='section'>
+                                                            <dt>SHOP BY PRODUCT</dt><dd><ul class='items'>
+                                                                <li><a href='../category/54-accessories.aspx?'>accessories</a></li><li><a href='../category/58-bags.aspx?categoryTransId=1'>
+                                                                    bags</a></li><li><a href='../category/59-dresses.aspx?categoryTransId=1'>dresses</a></li><li>
+                                                                        <a href='../category/60-outerwear.aspx?categoryTransId=1'>outerwear</a></li><li><a
+                                                                            href='../category/61-jewelry.aspx?categoryTransId=1'>jewelry</a></li><li><a href='../category/62-pants.aspx?categoryTransId=1'>
+                                                                                pants</a></li><li><a href='../category/63-shorts.aspx?categoryTransId=1'>shorts</a></li><li>
+                                                                                    <a href='../category/64-skirts.aspx?categoryTransId=1'>skirts</a></li><li><a href='../category/65-sweaters.aspx?categoryTransId=1'>
+                                                                                        sweaters</a></li><li><a href='../category/66-shoes.aspx?categoryTransId=1'>shoes</a></li><li>
+                                                                                            <a href='../category/67-tops.aspx?categoryTransId=1'>tops</a></li><li><a href='../category/68-TShirts.aspx?categoryTransId=1'>
+                                                                                                t-shirts</a></li><li><a href='../category/69-tanktops.aspx?categoryTransId=1'>tank tops</a></li></ul>
+                                                            </dd>
+                                                        </dl>
+                                                        <dl style='display: none' class='section'>
+                                                            <dt style='display: none'>BRANDS</dt><dd></dd></dl>
+                                                        <dl style='display: none' class='section'>
+                                                            <dt style='display: none'>GET INSPIRED</dt><dd></dd></dl>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </li>
+                                <li id='floor_16'><a class='replace selected' href='../category/55-men.aspx'>men</a><div
+                                    id='sub_floor_16' class='sub-floor-menus' style='display: none; left: 21px;'>
+                                    <div class='sub-menu-wrapper-left'>
+                                        <div class='sub-menu-wrapper-right'>
+                                            <div class='sub-menu-wrapper-bottom'>
+                                                <div class='sub-menu-wrapper-top'>
+                                                    <div class='sub-menu-wrapper'>
+                                                        <dl class='section'>
+                                                            <dt>SHOP BY PRODUCT</dt><dd><ul class='items'>
+                                                                <li><a href='../category/56-accessories.aspx?categoryTransId=2'>accessories</a></li><li>
+                                                                    <a href='../category/70-bags.aspx?categoryTransId=2'>bags</a></li><li><a href='../category/71-sweatshirts.aspx?categoryTransId=2'>
+                                                                        sweatshirts</a></li><li><a href='../category/72-outerwear.aspx?categoryTransId=2'>outerwear</a></li><li>
+                                                                            <a href='../category/73-pants.aspx?categoryTransId=2'>pants</a></li><li><a href='../category/74-shorts.aspx?categoryTransId=2'>
+                                                                                shorts</a></li><li><a href='../category/75-jewelry.aspx?categoryTransId=2'>jewelry</a></li><li>
+                                                                                    <a href='../category/76-tshirts.aspx?categoryTransId=2'>t-shirts</a></li><li><a href='../category/78-shoes.aspx?categoryTransId=2'>
+                                                                                        shoes</a></li></ul>
+                                                            </dd>
+                                                        </dl>
+                                                        <dl style='display: none' class='section'>
+                                                            <dt style='display: none'>BRANDS</dt><dd></dd></dl>
+                                                        <dl style='display: none' class='section'>
+                                                            <dt style='display: none'>GET INSPIRED</dt><dd></dd></dl>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </li>
+                                <li id='floor_26'><a class='replace selected' href='../category/57-kids.aspx'>kids</a><div
+                                    id='sub_floor_26' class='sub-floor-menus' style='display: none; left: 21px;'>
+                                    <div class='sub-menu-wrapper-left'>
+                                        <div class='sub-menu-wrapper-right'>
+                                            <div class='sub-menu-wrapper-bottom'>
+                                                <div class='sub-menu-wrapper-top'>
+                                                    <div class='sub-menu-wrapper'>
+                                                        <dl class='section'>
+                                                            <dt>SHOP BY PRODUCT</dt><dd><ul class='items'>
+                                                                <li><a href='../category/80-accessories.aspx?categoryTransId=3'>accessories</a></li><li>
+                                                                    <a href='../category/79-bags.aspx?categoryTransId=3'>bags</a></li><li><a href='../category/82-outerwear.aspx?categoryTransId=3'>
+                                                                        outerwear</a></li><li><a href='../category/90-jewelry.aspx?categoryTransId=3'>jewelry</a></li><li>
+                                                                            <a href='../category/87-onesies.aspx?categoryTransId=3'>onesies</a></li><li><a href='../category/83-pants.aspx?categoryTransId=3'>
+                                                                                pants</a></li><li><a href='../category/88-tshirts.aspx?categoryTransId=2'>t-shirts</a></li><li>
+                                                                                    <a href='../category/89-tops.aspx?categoryTransId=2'>tops</a></li><li><a href='../category/86-shoes.aspx?categoryTransId=3'>
+                                                                                        shoes</a></li><li><a href='../category/84-shorts.aspx?categoryTransId=3'>shorts</a></li><li>
+                                                                                            <a href='../category/85-skirts.aspx?categoryTransId=3'>skirts</a></li></ul>
+                                                            </dd>
+                                                        </dl>
+                                                        <dl style='display: none' class='section'>
+                                                            <dt style='display: none'>BRANDS</dt><dd></dd></dl>
+                                                        <dl style='display: none' class='section'>
+                                                            <dt style='display: none'>GET INSPIRED</dt><dd></dd></dl>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </li>
+                                <li><a href='/Manufacturers.aspx'>All Sellers</a><ul class='ManufacturersNav'>
+                                    <li><a id='menu_3_a' href='http://www.sewbie.com/manufacturer/3-kana.aspx'>Kana</a></li><li>
+                                        <a id='menu_12_a' href='http://www.sewbie.com/manufacturer/12-hello-again-vintage.aspx'>
+                                            Hello Again Vintage </a></li>
+                                    <li><a id='menu_14_a' href='http://www.sewbie.com/manufacturer/14-little-club-heads.aspx'>
+                                        Little Club Heads</a></li><li><a id='menu_15_a' href='http://www.sewbie.com/manufacturer/15-noumenon.aspx'>
+                                            Noumenon</a></li><li><a id='menu_18_a' href='http://www.sewbie.com/manufacturer/18-clo-hair-bows.aspx'>
+                                                Clo Hair Bows</a></li><li><a id='menu_19_a' href='http://www.sewbie.com/manufacturer/19-samka-jewelry-designs.aspx'>
+                                                    SamKa Jewelry Designs</a></li><li><a id='menu_20_a' href='http://www.sewbie.com/manufacturer/20-rachels-knit-knacks.aspx'>
+                                                        Rachel's Knit Knacks</a></li><li><a id='menu_21_a' href='http://www.sewbie.com/manufacturer/21-antisocial-jewelry.aspx'>
+                                                            AntiSocial Jewelry</a></li></ul>
+                                </li>
+                                <li><a id="ctl00_ctl00_ctrlHeaderMenu_Menu_Blog" href="http://sewbie.wordpress.com">
+                                    Blog</a> </li>
+                                <script type="text/javascript" src="/AddonsByOsShop/CustomScripts/SearchBox.js"></script>
+                                <script type="text/javascript">
+                                    function searchPage() {
+                                        window.location.href = 'http://www.sewbie.com/' + "Search.aspx?searchterms=" + $("#txtSearchTerms").val();
+                                    }
+
+</script>
+                                <li style="float: right; margin-right: 26px;">
+                                    <input type="button" id="btnSearch" class="searchboxbutton" onclick="searchPage();"
+                                        value="Search" />
+                                </li>
+                                <li style="float: right;">
+                                    <div class="searchbox_text">
+                                        Search store</div>
+                                    <input type="text" id="txtSearchTerms" class="searchboxtext" onblur="onblurValue();"
+                                        onfocus="onfocusValue();" onkeyup="findProducts();" onkeydown="txtSearch_onKeyDown();"
+                                        value="&nbsp;" />&nbsp; </li>
+                                <div class="showSearchResult_loading">
+                                </div>
+                                <div id="showSearchResult">
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="master-wrapper-center-1">
+    <div class="master-wrapper-cph-1">
+        <script type="text/javascript" src="/AddonsByOsShop/CustomScripts/jquery.simplemodal.js"></script>
+        <script type="text/javascript" src="/AddonsByOsShop/CustomScripts/osx.js"></script>
+        <script type="text/javascript" src="../Scripts/HomePageModal.js"></script>
+        <link type="text/css" href="../AddonsByOsShop/Styles/osx.css" />
+        <style type="text/css">
+            p
+            {
+                text-indent: 20px;
+                text-align: justify;
+            }
+            hr
+            {
+                border: none;
+                border-top: 1px #CCCCCC solid;
+                height: 1px;
+            }
+        </style>
+        <div id="divShowSplashMessage" style="display: none;" class="showSplashPanel">
+            <a class="simplemodal-close" href="#" style="font-size: 14pt; float: left;">Close</a>
+            <div class="clear">
+            </div>
+            <img alt="Click to browse the site!" src="../images/WeWorkingHard.png" id="productShortShowContent" />
+        </div>

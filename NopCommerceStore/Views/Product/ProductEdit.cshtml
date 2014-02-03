@@ -1,0 +1,179 @@
+﻿@model NopSolutions.NopCommerce.BusinessLogic.Products.Product
+
+@{
+    ViewBag.Title = "ProductEdit";
+}
+
+<h2>ProductEdit</h2>
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>Product</legend>
+
+        @Html.HiddenFor(model => model.ProductId)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Name)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Name)
+            @Html.ValidationMessageFor(model => model.Name)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ShortDescription)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ShortDescription)
+            @Html.ValidationMessageFor(model => model.ShortDescription)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.FullDescription)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.FullDescription)
+            @Html.ValidationMessageFor(model => model.FullDescription)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.AdminComment)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.AdminComment)
+            @Html.ValidationMessageFor(model => model.AdminComment)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.TemplateId)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.TemplateId)
+            @Html.ValidationMessageFor(model => model.TemplateId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ShowOnHomePage)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ShowOnHomePage)
+            @Html.ValidationMessageFor(model => model.ShowOnHomePage)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.MetaKeywords)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.MetaKeywords)
+            @Html.ValidationMessageFor(model => model.MetaKeywords)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.MetaDescription)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.MetaDescription)
+            @Html.ValidationMessageFor(model => model.MetaDescription)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.MetaTitle)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.MetaTitle)
+            @Html.ValidationMessageFor(model => model.MetaTitle)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.SEName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.SEName)
+            @Html.ValidationMessageFor(model => model.SEName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.AllowCustomerReviews)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.AllowCustomerReviews)
+            @Html.ValidationMessageFor(model => model.AllowCustomerReviews)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.AllowCustomerRatings)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.AllowCustomerRatings)
+            @Html.ValidationMessageFor(model => model.AllowCustomerRatings)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.RatingSum)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.RatingSum)
+            @Html.ValidationMessageFor(model => model.RatingSum)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.TotalRatingVotes)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.TotalRatingVotes)
+            @Html.ValidationMessageFor(model => model.TotalRatingVotes)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Published)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Published)
+            @Html.ValidationMessageFor(model => model.Published)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Deleted)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Deleted)
+            @Html.ValidationMessageFor(model => model.Deleted)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Activated)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Activated)
+            @Html.ValidationMessageFor(model => model.Activated)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CreatedOn)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CreatedOn)
+            @Html.ValidationMessageFor(model => model.CreatedOn)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.UpdatedOn)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.UpdatedOn)
+            @Html.ValidationMessageFor(model => model.UpdatedOn)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

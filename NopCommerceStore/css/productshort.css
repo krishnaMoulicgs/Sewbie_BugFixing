@@ -1,0 +1,404 @@
+﻿.simplemodal-container{
+	top:80px!important;
+	}
+#osx-modal{
+	position:relative;
+	}
+#osx-modal-content, #osx-modal-data {
+	display:none;
+	}
+#osx-modal-content{
+	border:5px solid #444;
+	}
+#osx-overlay {
+	background-color:#000;
+	cursor:wait;
+	}
+#osx-container {
+	background-color:#fff;
+	color:#000; 
+	font: 16px/24px "Lucida Grande",Arial,sans-serif;
+	padding-bottom:4px;
+	width:973px;
+	}
+#osx-container a {}
+#osx-container #osx-modal-title {
+	color:#000;
+	border-bottom:1px solid #ccc; 
+	font-weight:bold; 
+	padding:6px 8px;
+	text-shadow:0 1px 0 #f4f4f4;
+	}
+#osx-container .close {
+	display:none; 
+	position:absolute; 
+	right:0;
+	top:0;
+	}
+#osx-container .close a {
+	display:block;
+	color:#777; 
+	font-weight:bold;
+	padding:6px 12px 0;
+	text-decoration:none;
+	text-shadow:0 1px 0 #f4f4f4;
+	}
+#osx-container .close a:hover {
+	color:#000;
+	}
+#osx-container #osx-modal-data {
+	font-size:12px;
+	padding:6px 12px;
+	}
+#osx-container h2 {
+	margin:10px 0 6px;
+	}
+#osx-container p {
+	margin-bottom:10px;
+	}
+#osx-container span {
+	color:#777;
+	}
+.ProductShortShow_load{
+	font-size:25px;
+	margin:0px auto;
+	margin-top:200px;
+	width:320px;
+	height:120px;
+	background: url(../../App_Themes/Sewbie/images/Showloading.gif) no-repeat center center;}
+#osx-modal-data{
+	height:570px;
+	overflow:hidden!important;
+	}
+*+html #osx-modal-data{
+	height:570px;
+	}
+#osx-modal input{
+	background:#000;
+	color:#fff;
+	height:20px;
+	line-height:20px;
+	min-width:140px; 
+	padding:0px 5px;
+	}
+.simplemodal-data{
+	background:#fff;
+	}
+
+#osx-modal{
+	position:relative;
+	height:0px;
+	}
+.enter-address-body tr{
+	height:25px;
+	line-height:25px;
+	}
+
+
+
+
+#osx-modal-data p{
+	margin-top:10px;
+	}
+#osx-modal-data p button{
+	background:#000; 
+	color:#fff;
+	height:20px; 
+	line-height:20px;
+	padding:0px 5px;
+	}
+/*======================================================================================================*/
+.ProductShortShow_Message{
+	display:block;
+	width:420px;
+	height:500px; 
+	float:left;
+	padding:5px;
+	padding-top:50px;
+	}
+.ProductShortShow_img{
+	display:block;
+	width:420px;
+	height:500px;
+	line-height:500px;
+	overflow:hidden;
+	float:right;
+	padding:15px; 
+	padding-top:50px;
+	}
+
+#osx-modal-content .close .simplemodal-close {
+	display:block;
+	position:relative; 
+	top:20px; 
+	right:50px;
+	height:20px;
+	line-height:20px;
+	border:1px solid #333;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	}
+#osx-modal-content .close a.simplemodal-close {
+	color:#333;
+	font-weight:normal;
+	padding:2px 8px;
+	}
+#osx-modal-content .close a.simplemodal-close:hover{
+	color:#333;
+	}
+.item-box{
+	position:relative;
+	width:243px;
+	padding-bottom: 5px;
+	text-align:center;
+}
+
+.item-box .item-frame
+{
+	text-align:center;
+}
+
+.item-box .item-info-top
+{
+	display:block;
+	width:238px;/*always match width of the image*/
+	height:100%;
+	color: White;
+	background-color:Black;
+	margin-left:3px;
+}
+
+.item-box .item-info-bottom
+{
+	display:block;
+	position:absolute;
+	bottom:18px;
+	right:5px;
+	display:none;
+	color: White;
+	font-size:14px;
+}
+
+.item-info-top .product-price
+{
+	font-weight:bolder;
+}
+
+.item-info-top .product-name:link, .item-info-top .product-namea:visited, .item-info-top .product-name:hover, .item-info-top .product-name:active  {color:White;}
+.item-info-top .seller-name:link, .item-info-top .seller-name:visited, .item-info-top a.seller-name:hover, .item-info-top .seller-name:active  {color:#02b3ff;}
+
+.item-info-bottom .action-icons
+{
+	color:White;
+}
+
+.item-info-top .seller-name
+{
+	font-size:12pt;
+	font-weight:bolder;
+	color:#02b3ff;
+	
+}
+
+.item-info-top .product-name
+{
+	color:White;
+	overflow:hidden;
+	white-space:nowrap;
+	width:243px;
+}
+
+.item-frame a img
+{
+	vertical-align:bottom;
+}
+.item-box .item-info-background
+{
+	background:black;
+	height:65px;
+	margin-left:3px;
+}
+
+input#Productsshort_button{
+	display:block;
+	width:90px; 
+	height:22px;
+	background:#02b3ff;
+	filter: Alpha(Opacity=60);
+	opacity:0.6;
+	-moz-opacity:0.6;
+	position:absolute;
+	top:85px;
+	left:65px;
+	cursor:pointer;
+	color:#fff;
+	font-size:14px;
+	/*border:1px solid #fff;*/
+	}
+	
+	/*Hack for IE?*/
+*+html input#Productsshort_button{ 
+	display:block;
+	width:90px;
+	height:22px; 
+	filter: Alpha(Opacity=60);
+	opacity:0.6;
+	-moz-opacity:0.6;
+	background:#02b3ff;
+	position:absolute;
+	top:85px;
+	left:65px;
+	cursor:pointer;
+	color:#fff;
+	}
+
+.ProductShortShow_Message .ProductShortShow_name{
+	font-size:18px;
+	text-align:left;
+	font-weight:bold;
+	}
+.ProductShortShow_Message .ProductShortShow_name a{
+	color:#333;
+	height:20px;
+	line-height:20px;
+	}
+.ProductShortShow_Message .ProductShortShow_name a:hover{
+	text-decoration:none;
+	}
+
+.ProductShortShow_Message .ProductShortShow_price{
+	font-size:18px;
+	text-align:right;
+	color:#02b3ff;
+	border-bottom:1px dashed #333;
+	margin-bottom:20px;
+	}
+.ProductShortShow_describe{
+	width:280px;
+	text-align:left;
+	float:left;
+	}
+.ProductShortShow_buy{
+	width:100px;
+	height:30px;
+	float:right;
+	margin-right:20px;
+	}
+.ProductShortShow_buy a{
+	display:block;
+	width:100px;
+	height:30px;
+	line-height:30px;
+	background:#02b3ff;
+	color:#fff;
+	text-align:center;
+	font-size:16px;
+	font-weight:bold;
+	vertical-align:middle;
+	}
+.ProductShortShow_buy a:hover{
+	text-decoration:none;
+	}
+.ProductShortShow_img img{
+	width:360px;
+	margin:auto;
+	}
+.ProductShortShow_imgss{
+	width:270px;
+	height:100px;
+	position:relative;
+	top:-90px;
+	left:165px;
+	}
+*+html .ProductShortShow_imgss{
+	width:270px;
+	height:100px;
+	position:relative;
+	top:-90px;
+	left:55px;
+	}
+
+.ProductShortShow_imgss .mainDiv ul#myList li img{
+	height:70px;
+	}
+.productShortShow_prev{
+	display:block;
+	width:15px;
+	height:76px;
+	background:#000 url(images/buttons_left.gif) no-repeat;
+	float:left;
+	position:relative;
+	top:465px;
+	left:145px;
+	cursor:pointer;
+	}
+.productShortShow_next{
+	display:block;
+	width:15px;
+	height:76px;
+	background:#000 url(images/buttons_right.gif) no-repeat;
+	float:left;
+	position:relative;
+	top:465px;
+	left:425px;
+	cursor:pointer;
+	}
+.mainDiv ul#myList{
+	position:relative!important;
+	}
+.lvProductPictures_smal{
+	overflow:hidden;
+	}
+.ProductShortShow_move{
+	position:absolute;
+	left:20px;
+	padding-top:10px;
+	width:500px;
+	height:30px;
+	}
+input#moveLeft{
+	position:absolute;
+	display:block;
+	width:100px;
+	left:0px;
+	height:25px;
+	background:url(../../App_Themes/Sewbie/images/related_left.gif) no-repeat left center;
+	float:left;
+	cursor:pointer;
+	padding-left:15px;
+	font-size:14px;
+	}
+input#moveRight{
+	position:absolute;
+	left:400px;
+	display:block;
+	width:100px;
+	height:25px;
+	background:url(../../App_Themes/Sewbie/images/related_right.gif) no-repeat right center;
+	float:left;
+	cursor:pointer;
+	font-size:14px;
+	}
+
+/*============================================================================================IE6============================*/
+* html input#Productsshort_button{
+	display:block;
+	width:90px; 
+	height:22px;
+	position:absolute;
+	top:10px;
+	left:80px;
+	display:none;
+	}
+* html #osx-container .close{
+	width:100px;
+	}
+* html .ProductShortShow_imgss{
+	left:50px;
+	}
+
+/*===============================================================================================IE6-end==============*/
+
+
+
+

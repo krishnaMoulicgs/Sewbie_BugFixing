@@ -1,0 +1,181 @@
+#osx-modal{
+	position:relative;
+	}
+#osx-modal-content, #osx-modal-data {
+	display:none;
+	}
+#osx-modal-content{
+	border:5px solid #444;
+	}
+#osx-overlay {
+	background-color:#000; 
+	cursor:wait;
+	}
+#osx-container {
+	background-color:#fff;
+	color:#000;
+	font: 16px/24px "Lucida Grande",Arial,sans-serif;
+	padding-bottom:4px; 
+	width:973px;
+	}
+#osx-container a {}
+#osx-container #osx-modal-title {
+	color:#000;
+	border-bottom:1px solid #ccc;
+	font-weight:bold;
+	padding:6px 8px; 
+	text-shadow:0 1px 0 #f4f4f4;
+	}
+#osx-container .close {
+	display:none;
+	position:absolute; 
+	right:0;
+	top:0;
+	}
+#osx-container .close a {
+	display:block;
+	color:#777;
+	font-weight:bold; 
+	padding:6px 12px 0;
+	text-decoration:none;
+	text-shadow:0 1px 0 #f4f4f4;
+	}
+#osx-container .close a:hover {
+	color:#000;
+	}
+#osx-container #osx-modal-data {
+	font-size:12px;
+	padding:6px 12px;
+	}
+#osx-container h2 {
+	margin:10px 0 6px;
+	}
+#osx-container p {
+	margin-bottom:10px;
+	}
+#osx-container span {
+	color:#777;
+	}
+#shippingAddressShow, #billingAddressShow{
+	height:400px; 
+	overflow:auto;
+	}
+#osx-modal input{
+	background:#000;
+	color:#fff; 
+	height:20px;
+	line-height:20px;
+	min-width:140px;
+	padding:0px 5px;
+	}
+.defaultAddress{
+	background:#02b6ff; 
+	color:#fff; 
+	height:20px; 
+	line-height:20px; 
+	min-width:85px;
+	padding:0px 5px;
+	}
+.simplemodal-data{
+	background:#fff;
+	}
+
+#osx-modal{
+	position:relative;
+	height:0px;
+	}
+.enter-address-body tr{
+	height:25px;
+	line-height:25px;
+	}
+.OnePagePay_defaultAddress{
+	position:relative;
+	height:0px;
+	}
+.OnePagePayBillingAddress_defaultAddress{
+	position:relative; 
+	height:0px;
+	}
+.OnePagePay_defaultAddress input.defaultAddress{
+	position:absolute; 
+	left:160px;
+	top:-26px;
+	}
+.OnePagePayBillingAddress_defaultAddress input.defaultAddress{
+	position:absolute;
+	left:160px;
+	top:-27px;
+	}
+#osx-modal input#address1{
+	position:absolute;
+	left:15px;
+	top:38px;
+	}
+#osx-modal input#address1{
+	position:absolute;
+	left:15px;
+	top:35px\9;
+	}
+#osx-modal input#address2{
+	position:absolute;
+	left:15px;
+	top:478px;
+	}
+#osx-modal input#address2{
+	position:absolute;
+	left:15px;
+	top:471px\9;
+	}
+
+#shippingAddressShow .item-box, #billingAddressShow .item-box{
+	width:250px;
+	height:290px;
+	padding:10px;
+	float:left; 
+	margin:10px 15px;
+	border:1px solid #ccc;
+	}
+#shippingAddressShow input#shipping, #billingAddressShow input#billing{
+	background:#000; 
+	color:#fff;
+	height:20px; 
+	line-height:20px;
+	padding:0px 5px;
+	}
+#shippingAddressShow table td, #billingAddressShow table td{
+	text-align:left;
+	}
+#shippingAddressShow .AddressShowTitle, #billingAddressShow .AddressShowTitle{
+	border-bottom:1px solid #ccc;
+	color:#000;
+	}
+#osx-modal-data p{
+	margin-top:10px;
+	}
+#osx-modal-data p button{
+	background:#000; 
+	color:#fff; 
+	height:20px;
+	line-height:20px; 
+	padding:0px 5px;
+	}
+
+
+
+/*===============================================================================================IE6==============*/
+
+/*===============================================================================================IE6-end==============*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
